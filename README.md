@@ -1,0 +1,2 @@
+# relax-clinic
+Training template
