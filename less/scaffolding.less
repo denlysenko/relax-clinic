@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @brand-primary;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+}
+
+img {
+  vertical-align: top;
+}
+
+figure {
+  margin: 0;
+}

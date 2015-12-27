@@ -1,0 +1,116 @@
+@import '../css/fonts.css';
+@import 'variables.less';
+@import 'scaffolding.less';
+@import 'mixins.less';
+@import 'header.less';
+@import 'carousel.less';
+
+html, 
+body, 
+.container,
+.carousel {
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+
+	&:before,
+	&:after {
+		position: absolute;
+		top:50%;
+		margin-top: -30px;
+		content: "";
+		display: block;
+		width: 40px;
+		height: 60px;
+		border-radius: 100%;
+		background: @bg-color;
+	}
+
+	&:before {
+		left: -25px;
+	}
+
+	&:after {
+		right: -25px;
+	}
+
+	.after {
+		&:extend(.container:before);
+		width: 140px;
+		height: 60px;
+		top: 101%;
+		left: 50%;
+		margin-left: -70px;
+	}
+}
+
+.slogan {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: @bg-color;
+	font-size: 52px;
+	padding: 9px 42px;
+	line-height: 1.3;
+	border: 5px solid @bg-color;
+	transform: translate(-50%, -50%);
+	z-index: 555;
+	max-height: 485px;
+	overflow: hidden;
+}
+
+.info-block {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 80%;
+	height: 55%;
+	background: @bg-color;
+	z-index: 777;
+	overflow: hidden;
+
+	.contacts {
+		width: 40%;
+		float: left;
+		padding: 60px 120px 60px 100px;
+
+		h4 {
+			color: @brand-primary;
+		}
+	}
+
+	.map {
+		float: right;
+		width: 60%;
+		height: 100%;
+		padding: 10px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+@media(max-width: 535px) {
+
+	.slogan {
+		display: none;
+	}
+
+	.info-block .map {
+		display: none;
+	}
+}
+
+@media (max-width: 850px) {
+	.info-block .contacts {
+		padding: 30px;
+	}
+}

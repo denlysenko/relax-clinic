@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Relax Clinic</title>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="css/relax.min.css">	
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 class="logo">
+				<a href="index.html"></a>
+			</h1>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Индивидуальным клиентам</a></li>
+					<li><a href="#">Корпоративным клиентам</a></li>
+					<li><a href="#">Специалисты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header-slogan">
+				<p>Здоровое отражение нашей души</p> 
+			</div>
+		</header>
+		<div class="carousel">
+			<div class="carousel-controls">
+				<a href="#" role="button" class="left">&#8592;</a>
+				<a href="#" role="button" class="right">&#8594;</a>
+			</div>
+			<div class="carousel-indicators">
+			</div>
+			<figure>
+				<img src="images/gallery/slide1.jpg" alt="slide1">
+			</figure>
+			<figure>
+				<img src="images/gallery/slide2.jpg" alt="slide2">
+			</figure>
+			<figure>
+				<img src="images/gallery/slide3.jpg" alt="slide3">
+			</figure>
+			<figure>
+				<img src="images/gallery/slide4.jpg" alt="slide4">
+			</figure>
+			<figure>
+				<img src="images/gallery/slide5.jpg" alt="slide5">
+			</figure>
+			<figure>
+				<img src="images/gallery/slide6.jpg" alt="slide6">
+			</figure>
+		</div>
+		<div class="info-block">
+			<div class="map">
+				<img src="images/icons/map.jpg" alt="map">
+			</div>
+			<div class="contacts">
+				<h4>Контакты</h4>
+				<address>
+					Москва, 01101
+					Пушкинский бульвар, 21
+				</address>
+				<p>
+					+7(495)354-67-15
+					+7(495)483-34-83
+				</p>
+				<p>
+					<a href="#">support@relax.ru</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/relax.min.js"></script>
+	<script>
+		$('.carousel-indicators, .right').css('display', 'none');
+	</script>
+</body>
+</html>
